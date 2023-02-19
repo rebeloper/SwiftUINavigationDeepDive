@@ -22,6 +22,8 @@
 		C93F947429A23213008407D0 /* ChocolateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F946A29A23213008407D0 /* ChocolateView.swift */; };
 		C93F947529A23213008407D0 /* KiwiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F946B29A23213008407D0 /* KiwiView.swift */; };
 		C93F947729A233EF008407D0 /* NavigationRouterSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F947629A233EF008407D0 /* NavigationRouterSetup.swift */; };
+		C93F947A29A25DCD008407D0 /* kindaSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C93F947929A25DCD008407D0 /* kindaSwiftUI */; };
+		C93F947C29A25E0E008407D0 /* KindaSwiftUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C93F947B29A25E0E008407D0 /* KindaSwiftUI-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,7 @@
 		C93F946A29A23213008407D0 /* ChocolateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateView.swift; sourceTree = "<group>"; };
 		C93F946B29A23213008407D0 /* KiwiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KiwiView.swift; sourceTree = "<group>"; };
 		C93F947629A233EF008407D0 /* NavigationRouterSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouterSetup.swift; sourceTree = "<group>"; };
+		C93F947B29A25E0E008407D0 /* KindaSwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KindaSwiftUI-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93F947A29A25DCD008407D0 /* kindaSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +80,7 @@
 				C93F945329A23167008407D0 /* SwiftUINavigationDeepDiveApp.swift */,
 				C93F945529A23167008407D0 /* ContentView.swift */,
 				C93F947629A233EF008407D0 /* NavigationRouterSetup.swift */,
+				C93F947B29A25E0E008407D0 /* KindaSwiftUI-Info.plist */,
 				C93F946129A2318F008407D0 /* Views */,
 				C93F945729A23169008407D0 /* Assets.xcassets */,
 				C93F945929A23169008407D0 /* Preview Content */,
@@ -124,6 +129,9 @@
 			dependencies = (
 			);
 			name = SwiftUINavigationDeepDive;
+			packageProductDependencies = (
+				C93F947929A25DCD008407D0 /* kindaSwiftUI */,
+			);
 			productName = SwiftUINavigationDeepDive;
 			productReference = C93F945029A23167008407D0 /* SwiftUINavigationDeepDive.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +160,9 @@
 				Base,
 			);
 			mainGroup = C93F944729A23167008407D0;
+			packageReferences = (
+				C93F947829A25DCD008407D0 /* XCRemoteSwiftPackageReference "kindaSwiftUI" */,
+			);
 			productRefGroup = C93F945129A23167008407D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93F945B29A23169008407D0 /* Preview Assets.xcassets in Resources */,
+				C93F947C29A25E0E008407D0 /* KindaSwiftUI-Info.plist in Resources */,
 				C93F945829A23169008407D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +409,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C93F947829A25DCD008407D0 /* XCRemoteSwiftPackageReference "kindaSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/kindaSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C93F947929A25DCD008407D0 /* kindaSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C93F947829A25DCD008407D0 /* XCRemoteSwiftPackageReference "kindaSwiftUI" */;
+			productName = kindaSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C93F944829A23167008407D0 /* Project object */;
 }

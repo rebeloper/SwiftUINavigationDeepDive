@@ -10,10 +10,12 @@ import kindaSwiftUI
 
 struct KiwiView: View {
     
+    @EnvironmentObject private var router: Router<Destination>
+    
     var body: some View {
         List {
             Button("Pop") {
-                
+                router.pop()
             }
         }
         .navigationTitle("🥝")

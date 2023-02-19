@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+import kindaSwiftUI
 
 struct CarrotView: View {
+    
+    @EnvironmentObject private var router: Router<Destination>
     
     var body: some View {
         List {
             Button("Push 🥝") {
-                
+                router.push(.kiwiView)
             }
         }
         .navigationTitle("🥕")
